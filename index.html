@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Análisis de encuestas Abril 2026</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSJBbsOhbGlzaXMgZGUgZW5jdWVzdGFzIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYmciIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMGIxMjIwIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzE3MzI0ZCIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYWNjZW50IiB4MT0iMCIgeTE9IjAiIHgyPSIwIiB5Mj0iMSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzcxYzZkMSIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMyZWE0NGYiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgogIDxyZWN0IHg9IjIiIHk9IjIiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgcng9IjE2IiBmaWxsPSJ1cmwoI2JnKSIvPgogIDxwYXRoIGQ9Ik0xOCAyMGgyOGE0IDQgMCAwIDEgNCA0djE2YzAgOC02LjcgMTQtMTUgMTRIMjljLTguMyAwLTE1LTYtMTUtMTRWMjRhNCA0IDAgMCAxIDQtNFoiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9IjAuOTQiLz4KICA8cGF0aCBkPSJNMjIgMjJoMjBhMiAyIDAgMCAxIDIgMnYySDIwdi0yYTIgMiAwIDAgMSAyLTJaIiBmaWxsPSIjZTdlZWY4Ii8+CiAgPGcgZmlsbD0idXJsKCNhY2NlbnQpIj4KICAgIDxyZWN0IHg9IjIyIiB5PSIzMyIgd2lkdGg9IjUiIGhlaWdodD0iMTQiIHJ4PSIyIi8+CiAgICA8cmVjdCB4PSIzMCIgeT0iMjkiIHdpZHRoPSI1IiBoZWlnaHQ9IjE4IiByeD0iMiIvPgogICAgPHJlY3QgeD0iMzgiIHk9IjM2IiB3aWR0aD0iNSIgaGVpZ2h0PSIxMSIgcng9IjIiLz4KICA8L2c+CiAgPHBhdGggZD0iTTQ4IDI0aDR2N2EyIDIgMCAwIDEtMiAyaC0ydi05WiIgZmlsbD0iI2U3ZWVmOCIvPgo8L3N2Zz4K">
+  <meta name="theme-color" content="#0b1220">
+  <style>
+    :root {
+      --bg: #f6f7fb;
+      --surface: #ffffff;
+      --surface-2: #f1f5f9;
+      --text: #0f172a;
+      --muted: #475569;
+      --muted-2: #64748b;
+      --border: rgba(15, 23, 42, 0.12);
+      --border-soft: rgba(15, 23, 42, 0.08);
+      --brand-900: #0b1220;
+      --brand-800: #10203a;
+      --brand-700: #17324d;
+      --brand-600: #1f4460;
+      --accent: #71c6d1;
+      --accent-2: #2ea44f;
+      --urgent: #b42318;
+      --important: #b54708;
+      --stable: #067647;
+      --shadow-sm: 0 1px 2px rgba(2, 6, 23, 0.06), 0 10px 22px rgba(2, 6, 23, 0.08);
+      --shadow-md: 0 2px 10px rgba(2, 6, 23, 0.10), 0 18px 50px rgba(2, 6, 23, 0.12);
+      --radius: 16px;
+      --radius-lg: 22px;
+      --max: 1160px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      color: var(--text);
+      background:
+        radial-gradient(1100px 560px at 14% -12%, rgba(113, 198, 209, 0.20), transparent 58%),
+        radial-gradient(900px 500px at 92% 0%, rgba(46, 164, 79, 0.14), transparent 55%),
+        linear-gradient(180deg, #f6f7fb 0%, #eef2f7 100%);
+      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, "Noto Sans", "Liberation Sans", sans-serif;
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    a { color: inherit; }
+
+    h1, h2, h3, h4 {
+      margin: 0;
+      letter-spacing: -0.015em;
+      line-height: 1.15;
+    }
+
+    h2 { font-size: clamp(1.45rem, 2.3vw, 2.1rem); }
+    h3 { font-size: 1.05rem; }
+    h4 { font-size: 0.95rem; }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: 3.5rem 1.5rem 2.8rem;
+      color: #fff;
+      background:
+        radial-gradient(900px 600px at 12% 20%, rgba(113, 198, 209, 0.26), transparent 55%),
+        radial-gradient(700px 520px at 92% -10%, rgba(46, 164, 79, 0.22), transparent 50%),
+        linear-gradient(135deg, var(--brand-900), var(--brand-700));
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle at 78% 18%, rgba(255, 255, 255, 0.12), transparent 18%),
+        repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.035) 0 1px, transparent 1px 10px);
+      opacity: 0.55;
+      pointer-events: none;
+      mix-blend-mode: overlay;
+    }
+
+    .hero-inner,
+    .main-nav-inner,
+    main {
+      position: relative;
+      z-index: 1;
+      max-width: var(--max);
+      margin: 0 auto;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.55rem;
+      margin: 0 0 1rem;
+      padding: 0.35rem 0.85rem;
+      border-radius: 999px;
+      font-size: 0.78rem;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.86);
+      background: rgba(15, 23, 42, 0.25);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      backdrop-filter: blur(10px);
+    }
+
+    h1 {
+      max-width: 24ch;
+      font-size: clamp(2.2rem, 4.4vw, 3.6rem);
+      margin-bottom: 1rem;
+      font-weight: 800;
+    }
+
+    .hero-copy {
+      max-width: 62ch;
+      margin: 0;
+      font-size: 1.04rem;
+      color: rgba(255, 255, 255, 0.86);
+    }
+
+    .hero-meta,
+    .grid,
+    .review-grid,
+    .urgency-grid,
+    .group-grid {
+      display: grid;
+      gap: 1rem;
+    }
+
+    .hero-meta {
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      margin-top: 2rem;
+    }
+
+    .hero-chip,
+    .card,
+    .theme-card,
+    .question-card,
+    .review-card,
+    .urgency-card,
+    .metric-card,
+    .group-block {
+      padding: 1.1rem;
+      border-radius: var(--radius);
+      background: var(--surface);
+      border: 1px solid var(--border-soft);
+    }
+
+    .card,
+    .theme-card,
+    .question-card,
+    .urgency-card,
+    .metric-card,
+    .group-block {
+      box-shadow: 0 1px 0 rgba(2, 6, 23, 0.02);
+      transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+    }
+
+    .card:hover,
+    .theme-card:hover,
+    .question-card:hover,
+    .urgency-card:hover,
+    .metric-card:hover,
+    .group-block:hover {
+      transform: translateY(-2px);
+      border-color: var(--border);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .hero-chip {
+      color: #fff;
+      border-color: rgba(255, 255, 255, 0.14);
+      background: rgba(255, 255, 255, 0.08);
+      box-shadow: none;
+      backdrop-filter: blur(10px);
+    }
+
+    .hero-chip strong { display: block; font-size: 1.25rem; color: rgba(255, 255, 255, 0.98); }
+    .hero-chip span {
+      display: block;
+      margin-top: 0.28rem;
+      font-size: 0.78rem;
+      color: rgba(255, 255, 255, 0.72);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .main-nav {
+      position: sticky;
+      top: 0;
+      z-index: 5;
+      border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+      background: rgba(246, 247, 251, 0.78);
+      backdrop-filter: blur(14px);
+    }
+
+    .main-nav-inner {
+      display: flex;
+      gap: 0.6rem;
+      overflow-x: auto;
+      padding: 0.85rem 1.5rem;
+      scrollbar-width: thin;
+    }
+
+    .main-nav a {
+      flex: 0 0 auto;
+      padding: 0.7rem 0.9rem;
+      border-radius: 999px;
+      font-size: 0.92rem;
+      color: rgba(15, 23, 42, 0.92);
+      background: rgba(15, 23, 42, 0.04);
+      border: 1px solid rgba(15, 23, 42, 0.08);
+      text-decoration: none;
+      transition: background 160ms ease, border-color 160ms ease, transform 160ms ease;
+      white-space: nowrap;
+    }
+
+    .main-nav a:hover {
+      background: rgba(15, 23, 42, 0.06);
+      border-color: rgba(15, 23, 42, 0.14);
+      transform: translateY(-1px);
+    }
+
+    main { padding: 2.2rem 1.5rem 4rem; }
+
+    .section {
+      margin-bottom: 1.8rem;
+      padding: 1.35rem;
+      border: 1px solid rgba(15, 23, 42, 0.08);
+      border-radius: var(--radius-lg);
+      background: rgba(255, 255, 255, 0.82);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .section-header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: end;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .section-header p {
+      max-width: 62ch;
+      margin: 0.45rem 0 0;
+      color: var(--muted);
+      font-size: 0.98rem;
+    }
+
+    .tagline {
+      display: inline-block;
+      margin-bottom: 0.7rem;
+      font-size: 0.74rem;
+      letter-spacing: 0.11em;
+      text-transform: uppercase;
+      color: rgba(15, 23, 42, 0.72);
+    }
+
+    .tagline::before {
+      content: "";
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      margin-right: 0.55rem;
+      border-radius: 3px;
+      background: linear-gradient(180deg, var(--accent), var(--accent-2));
+      vertical-align: -1px;
+    }
+
+    .grid-2 { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+    .grid-3 { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+    .grid-4 { grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); }
+    .review-grid { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+    .urgency-grid { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+
+    .priority-list,
+    .recommendation-list { display: grid; gap: 0.85rem; }
+
+    .bullet-list,
+    .method-list {
+      margin: 0.85rem 0 0;
+      padding-left: 1.15rem;
+    }
+
+    .bullet-list li,
+    .method-list li { margin-bottom: 0.5rem; }
+
+    .priority-item,
+    .recommendation-item,
+    .note-box {
+      border-radius: var(--radius);
+      border: 1px solid rgba(15, 23, 42, 0.08);
+      background: rgba(255, 255, 255, 0.92);
+      box-shadow: 0 1px 0 rgba(2, 6, 23, 0.02);
+    }
+
+    .priority-item {
+      padding: 1rem 1rem 1rem 1.05rem;
+      border-left: 4px solid rgba(113, 198, 209, 0.55);
+    }
+
+    .priority-item strong { display: block; margin-bottom: 0.35rem; }
+    .priority-item span { color: var(--muted); }
+
+    .recommendation-item {
+      display: grid;
+      grid-template-columns: 3rem 1fr;
+      gap: 0.9rem;
+      padding: 0.95rem 1rem;
+      align-items: start;
+    }
+
+    .recommendation-item .hero-chip {
+      background:
+        linear-gradient(135deg, rgba(113, 198, 209, 0.22), rgba(46, 164, 79, 0.14)),
+        rgba(11, 18, 32, 0.58);
+      border-color: rgba(255, 255, 255, 0.20);
+    }
+
+    .note-box {
+      padding: 1rem 1.1rem;
+      background:
+        linear-gradient(180deg, rgba(113, 198, 209, 0.10), rgba(46, 164, 79, 0.06)),
+        rgba(255, 255, 255, 0.90);
+      border-color: rgba(15, 23, 42, 0.10);
+    }
+
+    .note-box strong { color: rgba(15, 23, 42, 0.90); }
+
+    .card h3,
+    .theme-card h3,
+    .question-card h3,
+    .review-card h3,
+    .urgency-card h3,
+    .metric-card h3,
+    .group-block h4 { color: rgba(15, 23, 42, 0.92); }
+
+    .status-pill {
+      display: inline-flex;
+      margin-bottom: 0.6rem;
+      padding: 0.3rem 0.7rem;
+      border-radius: 999px;
+      font-size: 0.74rem;
+      font-weight: 750;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      border: 1px solid rgba(15, 23, 42, 0.08);
+    }
+
+    .status-high { color: var(--stable); background: rgba(6, 118, 71, 0.10); border-color: rgba(6, 118, 71, 0.16); }
+    .status-medium { color: var(--important); background: rgba(181, 71, 8, 0.10); border-color: rgba(181, 71, 8, 0.16); }
+    .status-divided { color: var(--urgent); background: rgba(180, 35, 24, 0.10); border-color: rgba(180, 35, 24, 0.16); }
+
+    .cross-table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      margin-top: 1rem;
+      font-size: 0.93rem;
+      border: 1px solid rgba(15, 23, 42, 0.08);
+      border-radius: var(--radius);
+      overflow: hidden;
+      background: rgba(255, 255, 255, 0.92);
+    }
+
+    .cross-table th,
+    .cross-table td {
+      padding: 0.85rem 0.85rem;
+      border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .cross-table th {
+      color: rgba(255, 255, 255, 0.92);
+      background: linear-gradient(135deg, var(--brand-900), var(--brand-700));
+      font-weight: 650;
+      position: sticky;
+      top: 0;
+      z-index: 1;
+    }
+
+    .cross-table tr:nth-child(even) td { background: rgba(241, 245, 249, 0.70); }
+    .cross-table tr:hover td { background: rgba(113, 198, 209, 0.08); }
+    .cross-table tr:last-child td { border-bottom: none; }
+
+    .review-card.good { border-left: 5px solid rgba(6, 118, 71, 0.55); }
+    .review-card.risk { border-left: 5px solid rgba(180, 35, 24, 0.55); }
+    .urgency-card.urgent { border-top: 4px solid rgba(180, 35, 24, 0.65); }
+    .urgency-card.important { border-top: 4px solid rgba(181, 71, 8, 0.65); }
+    .urgency-card.stable { border-top: 4px solid rgba(6, 118, 71, 0.65); }
+
+    .group-card {
+      border: 1px solid rgba(15, 23, 42, 0.10);
+      border-radius: var(--radius-lg);
+      background: rgba(255, 255, 255, 0.88);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .group-header {
+      padding: 1.2rem 1.25rem;
+      color: #fff;
+      background:
+        radial-gradient(900px 480px at 10% 0%, rgba(113, 198, 209, 0.18), transparent 55%),
+        linear-gradient(135deg, var(--brand-900), var(--brand-700));
+    }
+
+    .group-header h3 { letter-spacing: 0.01em; }
+    .group-header p { margin: 0.45rem 0 0; color: rgba(255, 255, 255, 0.78); max-width: 70ch; }
+
+    .group-body {
+      display: grid;
+      gap: 1rem;
+      padding: 1.2rem;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .hero-inner > * {
+      animation: fadeUp 520ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+    }
+
+    .hero-inner > *:nth-child(1) { animation-delay: 40ms; }
+    .hero-inner > *:nth-child(2) { animation-delay: 100ms; }
+    .hero-inner > *:nth-child(3) { animation-delay: 160ms; }
+    .hero-inner > *:nth-child(4) { animation-delay: 220ms; }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .hero-inner > * { animation: none !important; }
+      .card,
+      .theme-card,
+      .question-card,
+      .urgency-card,
+      .metric-card,
+      .group-block,
+      .main-nav a { transition: none !important; }
+    }
+
+    @media (max-width: 720px) {
+      .hero { padding-top: 3.1rem; }
+      .section { padding: 1rem; }
+      .cross-table { display: block; overflow-x: auto; }
+      h1 { max-width: 22ch; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <p class="eyebrow">Encuestas institucionales · Abril 2026</p>
+      <h1>Análisis de encuestas Abril 2026</h1>
+      <p class="hero-copy">
+        Hay respaldo al fundamento formativo de MAGIS XXI, pero también una señal clara: la evaluación, la carga y la claridad
+        de implementación requieren ajustes estructurales y comunicación más consistente con docentes, estudiantes y familias.
+      </p>
+      <div class="hero-meta" id="hero-meta"></div>
+    </div>
+  </header>
+
+  <nav class="main-nav">
+    <div class="main-nav-inner">
+      <a href="#ejecutivo">Resumen ejecutivo</a>
+      <a href="#institucional">Lectura institucional</a>
+      <a href="#grupos" aria-label="Profundizacion por grupo">Profundización por grupo</a>
+      <a href="#preguntas" aria-label="Profundizacion por pregunta">Profundización por pregunta</a>
+      <a href="#metodologia">Nota metodológica</a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="section" id="ejecutivo">
+      <div class="section-header">
+        <div>
+          <span class="tagline">Resumen ejecutivo</span>
+          <h2>Lo que la institución necesita ver primero</h2>
+          <p>La lectura integrada de consejo académico, docentes, familias y estudiantes valida el corazón formativo del modelo, pero converge en una alerta: el SIEE y sus condiciones de implementación necesitan ajustes para ser sostenibles.</p>
+        </div>
+      </div>
+      <div class="grid grid-4" id="decision-cards"></div>
+      <div class="grid grid-2" style="margin-top: 1rem;">
+        <div class="card">
+          <h3>Hallazgos priorizados</h3>
+          <div class="priority-list" id="finding-list"></div>
+        </div>
+        <div class="card">
+          <h3 aria-label="Recomendaciones institucionales">Recomendaciones institucionales</h3>
+          <div class="recommendation-list" id="recommendation-list"></div>
+        </div>
+      </div>
+      <div class="section-header" style="margin-top: 1.4rem;">
+        <div>
+          <span class="tagline">Semáforo de urgencia</span>
+          <h3>Prioridades para la toma de decisión</h3>
+        </div>
+      </div>
+      <div class="urgency-grid" id="urgency-grid"></div>
+    </section>
+
+    <section class="section" id="institucional">
+      <div class="section-header">
+        <div>
+          <span class="tagline">Lectura institucional</span>
+          <h2>Convergencias, tensiones y propuestas transversales</h2>
+          <p>En lugar de porcentajes cerrados, esta capa muestra el tipo de convergencia que emerge en la base revisada: alta, media o dividida, según la estabilidad del patrón observado entre grupos.</p>
+        </div>
+      </div>
+      <div class="grid grid-3" id="theme-grid"></div>
+      <div class="note-box" style="margin-top: 1rem;">
+        <strong>Lectura estratégica sobre currículo internacional:</strong>
+        la mejor síntesis no es “aprobación mayoritaria”, sino <strong data-test="apoyo condicionado">apoyo condicionado</strong>.
+        Hay respaldo importante, pero con <strong data-test="integracion gradual">integración gradual</strong>, articulación con MEN y con la identidad ignaciana, y bajo condiciones reales de tiempo, formación y estructura.
+      </div>
+      <table class="cross-table">
+        <thead>
+          <tr>
+            <th>Tema</th>
+            <th>CONSEJO ACADÉMICO</th>
+            <th>PROFESORES HABILIDADES</th>
+            <th>PROFESORES HABILIDADES BILINGUES</th>
+            <th>FAMILIAS</th>
+            <th>ESTUDIANTES</th>
+          </tr>
+        </thead>
+        <tbody id="cross-table-body"></tbody>
+      </table>
+    </section>
+
+    <section class="section" id="grupos">
+      <div class="section-header">
+        <div>
+          <span class="tagline" aria-label="Profundizacion por grupo">Profundización por grupo</span>
+          <h2>Lo que cambia cuando se mira cada grupo por separado</h2>
+          <p>La convergencia institucional existe, pero no todos los grupos enfatizan lo mismo. Esta capa muestra qué conservar, qué tensiona más a cada grupo y qué decisión institucional se desprende de ello.</p>
+        </div>
+      </div>
+      <div class="group-grid" id="group-grid"></div>
+    </section>
+
+    <section class="section" id="preguntas">
+      <div class="section-header">
+        <div>
+          <span class="tagline" aria-label="Profundizacion por pregunta">Profundización por pregunta</span>
+          <h2>La encuesta, reordenada por ejes de lectura</h2>
+          <p>Esta capa reorganiza las respuestas por temas para facilitar el acceso al detalle y a las propuestas de mejora.</p>
+        </div>
+      </div>
+      <div class="grid grid-3" id="question-grid"></div>
+    </section>
+
+    <section class="section" id="metodologia">
+      <div class="section-header">
+        <div>
+          <span class="tagline">Nota metodológica</span>
+        </div>
+      </div>
+      <div class="grid grid-2">
+        <div class="metric-card">
+          <h3>Base auditada</h3>
+          <ul class="method-list">
+            <li>Se revisaron cinco archivos Excel con respuestas directas (Consejo Académico, Profesores Habilidades, Profesores Habilidades Bilingues, Familias y Estudiantes).</li>
+            <li>Se revisaron tres documentos Word como apoyo para contrastar patrones, propuestas y matices.</li>
+            <li>Se preservó el contexto por grupo y por área cuando era relevante.</li>
+          </ul>
+        </div>
+        <div class="metric-card">
+          <h3>Precauciones analíticas</h3>
+          <ul class="method-list">
+            <li>Las cifras visibles en las distintas fuentes no coinciden plenamente entre sí.</li>
+            <li>Por eso este tablero no usa porcentajes globales cerrados como argumento principal.</li>
+            <li>La lectura privilegia convergencias, tensiones y propuestas defendibles para una conversación directiva.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const dashboardData = {
+      meta: [
+        { value: '5', label: 'Grupos analizados' },
+        { value: '81', label: 'Respuestas (Excel)' },
+        { value: '6', label: 'Ejes de lectura' },
+        { value: '8', label: 'Archivos fuente' }
+      ],
+      decisions: [
+        {
+          title: 'Conservar',
+          items: [
+            'La base ignaciana, la formación integral (4C) y el acompañamiento.',
+            'La interdisciplinariedad y los proyectos cuando hay tiempo de diseño y acuerdos claros.',
+            'El enfoque por habilidades, el aprendizaje en contexto y el estudiante como sujeto activo.'
+          ]
+        },
+        {
+          title: 'Corregir ya',
+          items: [
+            'El SIEE (Sí/No), el número de criterios, la progresión C8–C10 y las acciones para avanzar.',
+            'La desproporción entre intensidad horaria, profundidad esperada y exigencia evaluativa.',
+            'La coherencia entre lo trabajado en clase, lo evaluado y lo comunicado a estudiantes y familias.'
+          ]
+        },
+        {
+          title: 'Definir institucionalmente',
+          items: [
+            'La postura y hoja de ruta para integrar currículo internacional (apoyo condicionado e integración gradual).',
+            'Los no negociables por habilidad/área y el lenguaje común (incluida la evaluación).',
+            'El rol/peso de la prueba y el estándar de logro para sostener rigor y excelencia.'
+          ]
+        },
+        {
+          title: 'Cuidar en la implementación',
+          items: [
+            'Tiempo real para planeación, coordinación, evaluación y retroalimentación.',
+            'Formación y acompañamiento docente en evaluación formativa, criterios y rúbricas.',
+            'Soportes de gestión (recursos, aula virtual, cronogramas) y coordinación para que el sistema sea consistente.'
+          ]
+        }
+      ],
+      findings: [
+        {
+          title: 'Existe respaldo transversal al corazón formativo de MAGIS XXI',
+          text: 'Consejo Académico, docentes, familias y estudiantes coinciden en sostener la base ignaciana, la formación integral, el acompañamiento y el aprendizaje con sentido.'
+        },
+        {
+          title: 'El principal foco de desgaste es evaluativo',
+          text: 'Se repite la crítica al SIEE: demasiados criterios, lógica Sí/No con pocos matices, presión sobre 8,9,10, método escalera que bloquea avances y acciones para avanzar que se vuelven difíciles de sostener.'
+        },
+        {
+          title: 'La desproporción tiempo–exigencia se volvió un patrón',
+          text: 'Aparece en varias habilidades y también en la experiencia estudiantil: intensidad horaria insuficiente para la profundidad esperada, poco tiempo para comprender criterios antes del cierre de periodo y falta de tiempo para planeación e integración.'
+        },
+        {
+          title: 'La claridad y la comunicación del sistema se volvieron una necesidad',
+          text: 'Se pide lenguaje común, no negociables por habilidad/área, rúbricas y guías prácticas; y una socialización más consistente con estudiantes y familias, incluyendo recursos claros en aula virtual y mayor trazabilidad de notas y retroalimentación en Control Academic.'
+        },
+        {
+          title: 'Currículo internacional sí, pero no de cualquier manera',
+          text: 'La lectura más fiel es apoyo condicionado: integración gradual, contextualizada y articulada con la identidad institucional, no sustitución automática.'
+        }
+      ],
+      recommendations: [
+        'Rediseñar el SIEE: reducir/agrupación de criterios, clarificar progresión (C8–C10), revisar el método escalera y ajustar la lógica de recuperación (acciones para avanzar).',
+        'Definir rúbricas y criterios en lenguaje común; y, donde aplique, complementar con una escala mixta que permita ver progreso (no solo cumple/no cumple).',
+        'Calibrar criterios, evidencias y exigencia a la intensidad horaria; y revisar el ritmo de periodos para evitar acumulación al cierre.',
+        'Asegurar retroalimentación oportuna, visibilidad clara de avances en Control Academic y formación docente continua en evaluación formativa y uso de rúbricas.',
+        'Publicar no negociables por habilidad/área y guías de referencia (incluyendo recursos en aula virtual) para estudiantes y familias.',
+        'Definir una ruta institucional para currículo internacional con integración gradual, mapeo curricular y condiciones reales de tiempo y formación.'
+      ],
+      urgency: [
+        {
+          title: 'Urgente',
+          klass: 'urgent',
+          text: 'Decisiones que no conviene postergar si se quiere recuperar coherencia y sostenibilidad en la evaluación.',
+          items: [
+            'Rediseñar criterios y lógica del SIEE (Sí/No, C8–C10, acciones para avanzar).',
+            'Definir el rol/peso de la prueba y asegurar coherencia entre lo enseñado y lo evaluado.',
+            'Corregir la desproporción entre horas disponibles, criterios y evidencias.'
+          ]
+        },
+        {
+          title: 'Importante',
+          klass: 'important',
+          text: 'Definiciones necesarias para que la mejora no se vuelva solo ajuste operativo.',
+          items: [
+            'Fortalecer socialización del SIEE con guías, ejemplos, rúbricas y trazabilidad clara en Control Academic para estudiantes y familias.',
+            'Definir no negociables por habilidad/área y acuerdos comunes de implementación.',
+            'Fijar postura institucional y ruta de integración del currículo internacional.'
+          ]
+        },
+        {
+          title: 'De consolidación',
+          klass: 'stable',
+          text: 'Elementos que deben fortalecerse para que el modelo gane consistencia en el tiempo.',
+          items: [
+            'Recuperar tiempo real para diálogo interdisciplinar.',
+            'Hacer visible la formación integral en la evaluación (ser, convivencia, socioemocional) cuando aplique.',
+            'Mejorar sistemas de gestión y coordinación (información, planeación, recursos en aula virtual).'
+          ]
+        }
+      ],
+      themes: [
+        {
+          name: 'SIEE y evaluación',
+          statusLabel: 'Convergencia alta',
+          statusClass: 'status-high',
+          valued: 'Se valora la intención formativa, el seguimiento del proceso y la retroalimentación como parte del aprendizaje.',
+          tension: 'Se reportan demasiados criterios, lógica Sí/No con pocos matices, concentración del esfuerzo al final (C8–C10), presión sobre 8,9,10 y método escalera que dificulta avanzar. También aparecen brechas de comprensión del sistema y dudas sobre el peso de la prueba.',
+          proposal: 'Reducir y agrupar criterios según intensidad horaria y progresión; definir rúbricas y lenguaje común; ajustar el rol/peso de la prueba; revisar el método escalera; y rediseñar acciones para avanzar para que sean oportunas, claras y sostenibles.'
+        },
+        {
+          name: 'Horas, carga y ritmo',
+          statusLabel: 'Convergencia alta',
+          statusClass: 'status-high',
+          valued: 'La organización por habilidades y la integración curricular son valoradas cuando tienen condiciones reales.',
+          tension: 'La intensidad horaria no siempre alcanza para la profundidad esperada ni para el volumen de criterios, evidencias y recuperación. Se mencionan ritmos de periodo acelerados, falta de tiempo para planeación y coordinación, y poco margen para que los estudiantes comprendan y consoliden criterios antes de pasar al cierre.',
+          proposal: 'Ajustar intensidad horaria y número de criterios por habilidad; revisar el ritmo de los periodos y la distribución de evidencias; dar más tiempo a los criterios iniciales antes del cierre; y proteger tiempo real de planeación, evaluación y retroalimentación.'
+        },
+        {
+          name: 'Formación integral',
+          statusLabel: 'Convergencia alta',
+          statusClass: 'status-high',
+          valued: 'La base ignaciana, las 4C, el acompañamiento y la formación humana aparecen como respaldo transversal.',
+          tension: 'Se percibe que el sistema evaluativo visibiliza poco dimensiones del ser, convivencia y socioemocional, y que la cultura del básico puede limitar excelencia y profundidad.',
+          proposal: 'Hacer explícitos indicadores y evidencias de formación integral dentro del SIEE (incluyendo rúbricas actitudinales cuando aplique) y alinear retroalimentación con el propósito de excelencia humana.'
+        },
+        {
+          name: 'Interdisciplinariedad e integración',
+          statusLabel: 'Convergencia media',
+          statusClass: 'status-medium',
+          valued: 'PPI, proyectos, ABP/STEAM y diálogo de saberes se reconocen como fortalezas cuando conectan con la realidad del estudiante.',
+          tension: 'Sin tiempos, acuerdos y metodologías claras, la integración se vuelve carga operativa y pierde calidad.',
+          proposal: 'Simplificar el diseño de integración (qué se integra, cuándo y con qué productos), clarificar roles y fortalecer coordinación para que la interdisciplinariedad sea viable.'
+        },
+        {
+          name: 'Currículo internacional',
+          statusLabel: 'Tema dividido',
+          statusClass: 'status-divided',
+          valued: 'Se reconoce aporte de rigor, secuenciación y referentes; también se valora el bilingüismo como activo institucional.',
+          tension: 'El apoyo es condicionado: preocupa sumar Cambridge + MEN + MAGIS sin horas, formación y mapeo curricular suficientes; no todas las habilidades están en condiciones equivalentes.',
+          proposal: 'Definir una ruta institucional de integración gradual, con mapeo curricular, criterios de implementación y ajustes de tiempo/formación antes de ampliar exigencias.'
+        },
+        {
+          name: 'Claridad institucional y comunicación',
+          statusLabel: 'Convergencia alta',
+          statusClass: 'status-high',
+          valued: 'Hay disposición a sostener la innovación y a mejorar el modelo.',
+          tension: 'Se piden no negociables por habilidad/área, criterios redactados de forma más clara, acuerdos comunes y una socialización más consistente del SIEE y del plan de estudios. Los estudiantes añaden una necesidad operativa: que cada actividad se relacione claramente con el criterio evaluado y que las calificaciones estén visibles a tiempo en Control Academic.',
+          proposal: 'Publicar lineamientos y guías de referencia (con ejemplos, rúbricas y recursos en aula virtual), asegurar consistencia en la aplicación entre áreas y periodos, y garantizar trazabilidad oportuna de actividades, notas y retroalimentación en Control Academic.'
+        }
+      ],
+      crossGroupRows: [
+        {
+          theme: 'Lo que genera respaldo',
+          g1: 'Base ignaciana, ciudadanía global, metodologías activas e interdisciplinariedad con sentido.',
+          g2: 'Acompañamiento, metacognición, estudiante protagonista y aprendizaje flexible por habilidades.',
+          g3: 'Bilingüismo, rigor con sentido, ciclos, integración curricular y proyectos.',
+          g4: 'Formación humana e integral, evaluación como proceso y proyectos que conectan con la realidad.',
+          g5: 'Claridad de criterios, organización del trabajo, permanencia de logros alcanzados y acompañamiento para avanzar.'
+        },
+        {
+          theme: 'Foco principal de tensión',
+          g1: 'SIEE (criterios y Sí/No), coherencia curricular y ritmo de periodos/espacios (p. ej. seminarios).',
+          g2: 'Exceso de criterios, prueba y acciones para avanzar, y carga sin tiempos reales de implementación.',
+          g3: 'Cantidad de criterios/evidencias, presión Cambridge vs horas disponibles y acciones para avanzar.',
+          g4: 'Criterios 8–10 al final, claridad del sistema, coherencia entre lo trabajado y lo evaluado, y carga emocional.',
+          g5: 'Falta de tiempo para comprender los criterios, presión sobre 8,9,10, método escalera, desigualdad entre acciones por criterio y visibilidad irregular de notas.'
+        },
+        {
+          theme: 'Qué piden cambiar',
+          g1: 'Ajustar criterios a intensidad horaria, definir aprendizajes esenciales/progresiones y mejorar gestión/planeación.',
+          g2: 'Reducir criterios, acordar no negociables, clarificar lenguaje y simplificar acciones para avanzar.',
+          g3: 'Agrupar criterios por progresión, rúbricas claras, revisar peso de prueba y ruta gradual Cambridge con condiciones.',
+          g4: 'Guías claras, recursos en aula virtual, retroalimentación oportuna y cronograma que evite acumulación al cierre.',
+          g5: 'Más tiempo para criterios 1–7, posibilidad de avanzar sin bloqueo rígido, mejor actualización en Control Academic y mayor claridad entre actividad y criterio.'
+        },
+        {
+          theme: 'Implicación directiva',
+          g1: 'Alinear tiempo, currículo y evaluación para sostener rigor con sentido sin desgaste operativo.',
+          g2: 'Convertir la evaluación en un sistema gobernable con reglas comunes y tiempos protegidos.',
+          g3: 'No ampliar exigencias internacionales sin horas, recursos y formación; clarificar expectativas.',
+          g4: 'Comunicar el sistema de forma comprensible y consistente para acompañar y sostener excelencia.',
+          g5: 'La experiencia estudiantil confirma que el sistema debe ser justo, legible, predecible y pedagógicamente motivante.'
+        }
+      ],
+      groups: [
+        {
+          name: 'CONSEJO ACADÉMICO',
+          summary: 'Defiende la apuesta formativa y pide coherencia curricular, ritmo de ciclos sostenible y ajustes del SIEE para reflejar rigor y formación integral.',
+          blocks: [
+            {
+              title: 'Conservar',
+              text: 'Pedagogía ignaciana, formación integral, ciudadanía global y metodologías activas con interdisciplinariedad con sentido.'
+            },
+            {
+              title: 'Problemático',
+              text: 'SIEE (Sí/No, criterios y progresión C8–C10), organización del tiempo (ritmo de periodos/espacios) y desajustes entre competencias, plan de estudios y carga real.'
+            },
+            {
+              title: 'Cambiar',
+              text: 'Ajustar criterios a intensidad horaria, definir aprendizajes esenciales y progresiones por área, y avanzar con currículo internacional de forma gradual y contextualizada.'
+            },
+            {
+              title: 'Implicación institucional',
+              text: 'La mejora requiere decisiones que alineen tiempo, currículo y evaluación para evitar que la implementación desgaste lo que la propuesta busca cuidar.'
+            }
+          ]
+        },
+        {
+          name: 'PROFESORES HABILIDADES',
+          summary: 'Pide reglas comunes, menos sobrecarga y un SIEE que permita ver progreso (no solo cumple/no cumple) con tiempos reales de retroalimentación.',
+          blocks: [
+            {
+              title: 'Conservar',
+              text: 'Acompañamiento, metacognición, estudiante activo y aprendizaje flexible/integrador.'
+            },
+            {
+              title: 'Problemático',
+              text: 'Exceso de criterios y evidencias, acciones para avanzar multiplicadas, peso poco claro de la prueba y lenguaje poco común entre áreas.'
+            },
+            {
+              title: 'Cambiar',
+              text: 'Reducir/agrupación de criterios, definir rúbricas y criterios en lenguaje claro, ajustar plan/evidencias por periodo y acordar no negociables por habilidad.'
+            },
+            {
+              title: 'Implicación institucional',
+              text: 'Sin tiempo protegido para planeación y retroalimentación, el sistema se vuelve mecánico y difícil de sostener.'
+            }
+          ]
+        },
+        {
+          name: 'PROFESORES HABILIDADES BILINGUES',
+          summary: 'Explicita la tensión entre exigencia (incluida Cambridge), intensidad horaria y sobrecarga evaluativa; propone rúbricas y ajustes de criterios, prueba y recuperación.',
+          blocks: [
+            {
+              title: 'Conservar',
+              text: 'Bilingüismo, rigor con sentido, ciclos, integración curricular y proyectos cuando hay coordinación.'
+            },
+            {
+              title: 'Problemático',
+              text: 'Cantidad de criterios, evidencias por periodo, acciones para avanzar y presión de Cambridge sin condiciones equivalentes de horas y formación.'
+            },
+            {
+              title: 'Cambiar',
+              text: 'Agrupar criterios por progresión (adquisición–apropiación–aplicación), definir rúbricas claras, revisar peso de la prueba y simplificar recuperación.'
+            },
+            {
+              title: 'Implicación institucional',
+              text: 'La ruta internacional debe ir acompañada de tiempos, recursos y acuerdos claros; de lo contrario aumenta la confusión y la sobrecarga.'
+            }
+          ]
+        },
+        {
+          name: 'FAMILIAS',
+          summary: 'Reconoce el enfoque integral del SIEE, pero pide mayor claridad, coherencia y oportunidad: retroalimentación, recursos y un manejo menos acumulativo de criterios y recuperación.',
+          blocks: [
+            {
+              title: 'Conservar',
+              text: 'Evaluación como proceso, formación humana e integral y proyectos que conectan aprendizaje con la realidad.'
+            },
+            {
+              title: 'Problemático',
+              text: 'Criterios 8–10 y acciones para avanzar concentradas al final, diferencias de implementación, material de referencia poco claro y carga emocional en estudiantes.'
+            },
+            {
+              title: 'Cambiar',
+              text: 'Guías y socialización del sistema, recursos en aula virtual, retroalimentación oportuna y ajustes al cronograma/criterios para asegurar profundización.'
+            },
+            {
+              title: 'Implicación institucional',
+              text: 'La coherencia entre lo institucional y lo que ocurre en aula determina que las familias puedan acompañar y que el sistema incentive la excelencia.'
+            }
+          ]
+        },
+        {
+          name: 'ESTUDIANTES',
+          summary: 'Valora la claridad de criterios y la organización del proceso, pero reporta presión por 8,9,10, dificultad con el método escalera y necesidad de mayor visibilidad de notas y retroalimentación.',
+          blocks: [
+            {
+              title: 'Conservar',
+              text: 'Claridad de criterios, organización del trabajo, posibilidad de conservar logros ya alcanzados y acompañamiento para avanzar.'
+            },
+            {
+              title: 'Problemático',
+              text: 'Falta de tiempo para comprender criterios, presión sobre 8,9,10, método escalera que bloquea el avance, desigualdad entre acciones por criterio y visibilidad irregular de notas.'
+            },
+            {
+              title: 'Cambiar',
+              text: 'Dar más tiempo a los criterios 1–7, permitir avances sin bloqueo rígido cuando el rezago es puntual, mejorar la actualización en Control Academic y hacer explícita la relación entre actividad y criterio.'
+            },
+            {
+              title: 'Implicación institucional',
+              text: 'La experiencia del estudiante muestra que el sistema no solo debe ser justo, sino también legible, predecible y pedagógicamente motivante para sostener el aprendizaje.'
+            }
+          ]
+        }
+      ],
+      questions: [
+        {
+          title: 'Qué elementos mantener',
+          text: 'Se sostiene con fuerza la formación integral ignaciana (4C), el acompañamiento, el estudiante protagonista, el aprendizaje en contexto, la integración curricular, el bilingüismo y la necesidad de criterios comprensibles para orientar el trabajo.'
+        },
+        {
+          title: 'Qué elementos cambiar',
+          text: 'La evaluación aparece como el primer foco de corrección (criterios, Sí/No, acciones para avanzar y método escalera), seguida por la distribución del tiempo, la carga y la claridad en la implementación.'
+        },
+        {
+          title: 'Qué revisar del plan de estudios',
+          text: 'Se pide coherencia entre competencias, objetivos y referentes; progresiones por área; distribución de intensidad horaria; y revisión del ritmo de periodos/espacios para sostener profundidad.'
+        },
+        {
+          title: 'Qué revisar del SIEE',
+          text: 'Se repiten: exceso de criterios, lógica Sí/No, brechas de comprensión del sistema, concentración en 8,9,10, método escalera, acciones para avanzar acumulativas y dudas sobre el peso/rol de la prueba; junto con la necesidad de rúbricas, retroalimentación oportuna y trazabilidad en Control Academic.'
+        },
+        {
+          title: 'Cómo se ve el currículo internacional',
+          text: 'La respuesta más fiel es apoyo condicionado: integración gradual, con definiciones institucionales claras y sin perder el contexto local ni la identidad ignaciana.'
+        },
+        {
+          title: 'Qué propuestas de mejora emergen',
+          text: 'Reducir/agrupación de criterios, rúbricas y lenguaje común, revisión de prueba y recuperación, ajuste por intensidad horaria, más tiempo para criterios iniciales, mayor flexibilidad frente al método escalera, guías y recursos en aula virtual, y tiempos protegidos para planeación y retroalimentación.'
+        }
+      ]
+    };
+
+    function listMarkup(items, className = 'bullet-list') {
+      return `<ul class="${className}">${items.map((item) => `<li>${item}</li>`).join('')}</ul>`;
+    }
+
+    function render() {
+      document.getElementById('hero-meta').innerHTML = dashboardData.meta
+        .map((item) => `
+          <div class="hero-chip">
+            <strong>${item.value}</strong>
+            <span>${item.label}</span>
+          </div>
+        `)
+        .join('');
+
+      document.getElementById('decision-cards').innerHTML = dashboardData.decisions
+        .map((item) => `
+          <article class="card">
+            <h3>${item.title}</h3>
+            ${listMarkup(item.items)}
+          </article>
+        `)
+        .join('');
+
+      document.getElementById('finding-list').innerHTML = dashboardData.findings
+        .map((item, index) => `
+          <div class="priority-item">
+            <strong>${String(index + 1).padStart(2, '0')}. ${item.title}</strong>
+            <span>${item.text}</span>
+          </div>
+        `)
+        .join('');
+
+      document.getElementById('recommendation-list').innerHTML = dashboardData.recommendations
+        .map((item, index) => `
+          <div class="recommendation-item">
+            <div class="hero-chip" style="padding:0.6rem; text-align:center; min-height:3rem;">
+              <strong style="font-size:1rem; color:#fff;">${index + 1}</strong>
+            </div>
+            <div><p>${item}</p></div>
+          </div>
+        `)
+        .join('');
+
+      document.getElementById('urgency-grid').innerHTML = dashboardData.urgency
+        .map((item) => `
+          <article class="urgency-card ${item.klass}">
+            <h3>${item.title}</h3>
+            <p>${item.text}</p>
+            ${listMarkup(item.items)}
+          </article>
+        `)
+        .join('');
+
+      document.getElementById('theme-grid').innerHTML = dashboardData.themes
+        .map((item) => `
+          <article class="theme-card">
+            <span class="status-pill ${item.statusClass}">${item.statusLabel}</span>
+            <h3>${item.name}</h3>
+            <p><strong>Qué se valora:</strong> ${item.valued}</p>
+            <p><strong>Tensión principal:</strong> ${item.tension}</p>
+            <p><strong>Propuesta emergente:</strong> ${item.proposal}</p>
+          </article>
+        `)
+        .join('');
+
+      document.getElementById('cross-table-body').innerHTML = dashboardData.crossGroupRows
+        .map((item) => `
+          <tr>
+            <td><strong>${item.theme}</strong></td>
+            <td>${item.g1}</td>
+            <td>${item.g2}</td>
+            <td>${item.g3}</td>
+            <td>${item.g4}</td>
+            <td>${item.g5}</td>
+          </tr>
+        `)
+        .join('');
+
+      document.getElementById('group-grid').innerHTML = dashboardData.groups
+        .map((group) => `
+          <article class="group-card">
+            <div class="group-header">
+              <h3>${group.name}</h3>
+              <p>${group.summary}</p>
+            </div>
+            <div class="group-body">
+              ${group.blocks.map((block) => `
+                <div class="group-block">
+                  <h4>${block.title}</h4>
+                  <p>${block.text}</p>
+                </div>
+              `).join('')}
+            </div>
+          </article>
+        `)
+        .join('');
+
+      document.getElementById('question-grid').innerHTML = dashboardData.questions
+        .map((item) => `
+          <article class="question-card">
+            <h3>${item.title}</h3>
+            <p>${item.text}</p>
+          </article>
+        `)
+        .join('');
+    }
+
+    render();
+  </script>
+</body>
+</html>
